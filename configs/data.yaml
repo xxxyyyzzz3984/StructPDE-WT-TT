@@ -1,0 +1,38 @@
+project:
+  id: StructPDE-WT-TT
+  root_policy: "All caches, downloads, intermediate files, models, and results stay under this repository."
+
+scpca:
+  project_id: SCPCP000006
+  url: https://scpca.alexslemonade.org/projects/SCPCP000006
+  api: https://api.scpca.alexslemonade.org/v1
+  preferred_files:
+    - SCPCP000006_ALL_METADATA.zip
+    - SCPCP000006_SINGLE-CELL_ANN-DATA_MERGED.zip
+    - SCPCP000006_SPATIAL_SINGLE-CELL-EXPERIMENT.zip
+
+target_wt:
+  gdc_project: TARGET-WT
+  gdc_api: https://api.gdc.cancer.gov
+  open_access_only: true
+
+geo:
+  cohorts:
+    - GSE31403
+    - GSE10320
+
+fetal_kidney:
+  article: https://pmc.ncbi.nlm.nih.gov/articles/PMC6104812/
+  hca_project_id: d8ae869c-39c2-4cdd-b3fc-2d0d8f60e7b8
+  hca_project_url: https://explore.data.humancellatlas.org/projects/d8ae869c-39c2-4cdd-b3fc-2d0d8f60e7b8
+  note: "Public HCA fetal/adult/tumor kidney reference matrix; can be downloaded automatically from Azul/HCA."
+
+ligand_receptor:
+  omnipath_url: https://omnipathdb.org/interactions?datasets=ligrecextra&organisms=9606&genesymbols=1&fields=sources,references,curation_effort,type
+  use_liana_when_installed: true
+  use_cellphonedb_when_installed: true
+
+structure:
+  alphafold_base: https://alphafold.ebi.ac.uk/files
+  uniprot_api: https://rest.uniprot.org/uniprotkb
+  pdb_search_api: https://search.rcsb.org/rcsbsearch/v2/query

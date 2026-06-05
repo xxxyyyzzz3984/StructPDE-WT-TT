@@ -1,0 +1,18 @@
+model:
+  hidden_dim: 96
+  lr_pair_dim: 64
+  gnn_layers: 2
+  pde_steps: 5
+  top_lr_pairs: 100
+  dropout: 0.1
+  use_structure_score: true
+  use_pde: true
+
+training:
+  batch_size_nodes: 4096
+  epochs: 200
+  lr: 0.001
+  weight_decay: 0.0001
+  early_stopping: 20
+  seed: 20260524
+

@@ -1,0 +1,28 @@
+# Local environments and caches
+.cache/
+.deps/
+.deps_structure/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Data, model weights, and generated outputs are intentionally not published
+data/
+downloads/
+models/
+results/
+logs/
+remote_artifacts/
+remote_artifacts_full/
+paper/rendered_wt_word/
+
+# Local credentials or machine-specific transfer bundles
+ssh-account.txt
+*.tar
+*.tar.gz
+*.zip.part
+
+# OS/editor files
+.DS_Store
+Thumbs.db
